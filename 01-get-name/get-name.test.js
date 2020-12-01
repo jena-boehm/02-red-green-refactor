@@ -1,4 +1,4 @@
-// refactor, use dot notation to get the objects name
+// refactor, destructure to get the objects name
 // tests stay green, commit
 
 const { getName } = require('./get-name.js');

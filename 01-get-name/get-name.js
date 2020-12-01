@@ -12,7 +12,8 @@ const character = {
 };
 
 const getName = (obj) => {
-    return obj.name;
+    const { name } = obj;
+    return name;
 }
 
 console.log(getName(spot), getName(character));
