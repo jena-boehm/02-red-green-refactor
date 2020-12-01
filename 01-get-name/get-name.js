@@ -11,8 +11,8 @@ const character = {
     name: 'Aang' 
 };
 
-const getName = () => {
-    return 'spot';
+const getName = (obj) => {
+    return obj['name']
 }
 
 module.exports = {
