@@ -1,6 +1,3 @@
-// refactor, destructure function parameters and return name
-// tests stay green, commit
-
 const { getName } = require('./get-name.js');
 
 describe('getName', () => {
