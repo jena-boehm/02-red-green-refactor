@@ -1,5 +1,4 @@
-//1. create your function, use `push` to add item to array and return array
-// green, commit
+// oops we were supposed to return a copy
 
 const { copyAndPush } = require('./copy-and-push.js');
 
