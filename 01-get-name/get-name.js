@@ -12,8 +12,10 @@ const character = {
 };
 
 const getName = (obj) => {
-    return obj['name']
+    return obj.name;
 }
+
+console.log(getName(spot), getName(character));
 
 module.exports = {
     getName

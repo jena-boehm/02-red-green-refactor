@@ -1,5 +1,5 @@
-// create your function, use bracket notation to get the objects name property
-// pass tests and commit
+// refactor, use dot notation to get the objects name
+// tests stay green, commit
 
 const { getName } = require('./get-name.js');
 
@@ -12,4 +12,14 @@ test('returns the name property of an object', () => {
     const name = getName(spot)
     
     expect(name).toEqual('spot');
+});
+
+test('returns the name property of an object', () => {
+    const character = { 
+        _id: '5cf5679a915ecad153ab68c9', 
+        name: 'Aang' 
+    };
+    const name = getName(character)
+    
+    expect(name).toEqual('Aang');
 });
