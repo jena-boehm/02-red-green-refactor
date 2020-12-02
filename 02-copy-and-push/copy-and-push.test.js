@@ -1,5 +1,3 @@
-// update code, use spread to copy and append
-
 const { copyAndPush } = require('./copy-and-push.js');
 
 describe('copyAndPush', () => {
