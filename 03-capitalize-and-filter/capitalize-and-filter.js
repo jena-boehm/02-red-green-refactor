@@ -1,5 +1,3 @@
-// create a function that takes an array of strings capitalize all strings and filter out any string that starts with the letter f.
-
 const capitalizeAndFilter = (arr) => {
     const newArr = []; 
 
