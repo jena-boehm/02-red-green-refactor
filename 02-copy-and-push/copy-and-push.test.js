@@ -1,4 +1,4 @@
-// add another test that makes sure that the original array is unchanged
+// update code, use spread to copy and append
 
 const { copyAndPush } = require('./copy-and-push.js');
 
