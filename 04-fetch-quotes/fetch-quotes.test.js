@@ -1,19 +1,16 @@
 const { fetchQuotes } = require('./fetch-quotes.js');
+const request = require('superagent');
 
 describe('fetchQuotes', () => {
     it('returns a single Futurama quote', async() => {
-        const quote = {
-          "character": "Bender",
-          "quote": "I'm a fraud. A poor, lazy, sexy fraud.",
-          "image": "https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
-          }
+      const expected = {
+        character: expect.any(String),
+        quote: expect.any(String),
+        image: expect.any(String)
+      };
 
-        const result = await fetchQuotes(quote);
+        const result = await fetchQuotes();
         
-        expect(result).toEqual({
-          "name": "Bender",
-          "text": "I'm a fraud. A poor, lazy, sexy fraud.",
-          "image": "https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
-          });
+        expect(result).toEqual(expected);
     });
 });
