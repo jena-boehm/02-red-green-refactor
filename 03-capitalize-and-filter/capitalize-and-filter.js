@@ -3,14 +3,14 @@
 const capitalizeAndFilter = (arr) => {
     const newArr = []; 
 
-    for(let i = 0; i < arr.length; i++) {
-        const item = arr[i];
-        const uppercaseItem =  item.toUpperCase();
+    arr.forEach(item => {
+        const uppercaseItem = item.toUpperCase();
 
         if(uppercaseItem.charAt(0) !== 'F') {
             newArr.push(uppercaseItem);
-        }
-    }
+        };
+    });
+
     return newArr;
 };
 
